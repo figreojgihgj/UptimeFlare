@@ -50,11 +50,7 @@ const workerConfig: WorkerConfig = {
     target: 'https:/random.arcwolf.top/pic',
     checkProxy: 'worker://apac'
   },
-      // [OPTIONAL] headers to be sent
-      headers: {
-        'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
-      },
+      // [OPTIONAL] headers to be
       // [OPTIONAL] body to be sent (require POST/PUT/PATCH method)
       // body: 'Hello, world!',
       // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
@@ -68,18 +64,7 @@ const workerConfig: WorkerConfig = {
       // [OPTIONAL] if true, the check will fallback to local if the specified proxy is down
       // checkProxyFallback: true,
     },
-    // Example TCP Monitor
-    {
-      id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
-      // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
-      tooltip: 'My production server SSH',
-      statusPageLink: 'https://example.com',
-      timeout: 5000,
-    },
+    // Example T
   ],
   // [Optional] Notification settings
   notification: {
