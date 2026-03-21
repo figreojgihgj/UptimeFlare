@@ -63,7 +63,7 @@ const workerConfig: WorkerConfig = {
       // checkProxy: 'worker://weur',
       // [OPTIONAL] if true, the check will fallback to local if the specified proxy is down
       // checkProxyFallback: true,
-    },
+  
     // Example T
   ],
   // [Optional] Notification settings
