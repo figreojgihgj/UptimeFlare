@@ -35,20 +35,23 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 10000,
+      statusPageLink: 'https:www.arcwolf.top',
     },
     {
     id: 'umami',
     name: 'Umami',
     method: 'GET',
     target: 'https://umami.arcwolf.top',
-    checkProxy: 'worker://apac'
+    checkProxy: 'worker://apac',
+    statusPageLink: 'https://umami.arcwolf.top',
   },
   {
     id: 'random',
     name: '随机图',
     method: 'GET',
     target: 'https:/random.arcwolf.top/pic',
-    checkProxy: 'worker://apac'
+    checkProxy: 'worker://apac',
+    statusPageLink: 'https:/random.arcwolf.top/pic',
   },
       // [OPTIONAL] headers to be
       // [OPTIONAL] body to be sent (require POST/PUT/PATCH method)
@@ -111,21 +114,7 @@ const workerConfig: WorkerConfig = {
 // const maintenances: MaintenanceConfig[] = []
 
 const maintenances: MaintenanceConfig[] = [
-  {
-    // [Optional] Monitor IDs to be affected by this maintenance
-    monitors: ['foo_monitor', 'umami', 'random'],
-    // [Optional] default to "Scheduled Maintenance" if not specified
-    title: 'Test Maintenance',
-    // Description of the maintenance, will be shown at status page
-    body: 'This is a test maintenance, server software upgrade',
-    // Start time of the maintenance, in UNIX timestamp or ISO 8601 format
-    start: '2020-01-01T00:00:00+08:00',
-    // [Optional] end time of the maintenance, in UNIX timestamp or ISO 8601 format
-    // if not specified, the maintenance will be considered as on-going
-    end: '2050-01-01T00:00:00+08:00',
-    // [Optional] color of the maintenance alert at status page, default to "yellow"
-    color: 'blue',
-  },
+
 ]
 
 // Don't edit this line
