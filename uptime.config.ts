@@ -35,7 +35,7 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 10000,
-      statusPageLink: 'https:www.arcwolf.top',
+      statusPageLink: 'https://www.arcwolf.top',
     },
     {
     id: 'umami',
