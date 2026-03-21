@@ -36,14 +36,14 @@ const workerConfig: WorkerConfig = {
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 10000,
     },
-      {
+    {
     id: 'umami',
     name: 'Umami',
     method: 'GET',
     target: 'https://umami.arcwolf.top',
     checkProxy: 'worker://apac'
   },
-      {
+  {
     id: 'random',
     name: '随机图',
     method: 'GET',
@@ -113,7 +113,7 @@ const workerConfig: WorkerConfig = {
 const maintenances: MaintenanceConfig[] = [
   {
     // [Optional] Monitor IDs to be affected by this maintenance
-    monitors: ['foo_monitor', 'bar_monitor'],
+    monitors: ['foo_monitor', 'umami', 'random'],
     // [Optional] default to "Scheduled Maintenance" if not specified
     title: 'Test Maintenance',
     // Description of the maintenance, will be shown at status page
