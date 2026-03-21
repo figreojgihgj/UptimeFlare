@@ -7,12 +7,12 @@ import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
   // Title for your status page
-  title: "lyc8503's Status Page",
+  title: "Arcwolf 状态监控",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
-    { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
+    { link: 'https://gitee.com/arcwolf1', label: 'GitHub' },
+    { link: 'https://www.arcwolf.top/', label: 'Blog' },
+    { link: 'mailto:shiroko_small@outlook.com', label: 'Email Me', highlight: true },
   ],
 }
 
@@ -24,19 +24,32 @@ const workerConfig: WorkerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'foo_monitor',
       // `name` is used at status page and callback message
-      name: 'My API Monitor',
+      name: '博客',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
-      target: 'https://example.com',
+      target: 'https://www.arcwolf.top',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://example.com',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 10000,
+    },
+      {
+    id: 'umami',
+    name: 'Umami',
+    method: 'GET',
+    target: 'https://umami.arcwolf.top',
+    checkProxy: 'worker://apac'
+  },
+      {
+    id: 'random',
+    name: '随机图',
+    method: 'GET',
+    target: 'https:/random.arcwolf.top/pic',
+    checkProxy: 'worker://apac'
+  },
       // [OPTIONAL] headers to be sent
       headers: {
         'User-Agent': 'Uptimeflare',
