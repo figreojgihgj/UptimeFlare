@@ -10,9 +10,9 @@ const pageConfig: PageConfig = {
   title: "Arcwolf 状态监控",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://gitee.com/arcwolf1', label: 'GitHub' },
+    { link: 'https://gitee.com/arcwolf1', label: 'Gitee' },
     { link: 'https://www.arcwolf.top/', label: 'Blog' },
-    { link: 'mailto:shiroko_small@outlook.com', label: 'Email Me', highlight: true },
+    { link: 'mailto:shiroko_small@outlook.com', label: '邮件', highlight: true },
   ],
 }
 
@@ -52,6 +52,21 @@ const workerConfig: WorkerConfig = {
     target: 'https:/random.arcwolf.top/pic',
     checkProxy: 'worker://apac',
     statusPageLink: 'https:/random.arcwolf.top/pic',
+  },
+   {
+    id: 'exam',
+    name: '考试看板',
+    method: 'GET',
+    target: 'https://exam.arcwolf.top',
+    checkProxy: 'worker://apac',
+    statusPageLink: 'https://exam.arcwolf.top',
+  },
+   {
+    id: 'wsl',
+    name: 'WSL 服务器',
+    method: 'TCP_PING',
+    target: 'wsl.arcwolf.top:80',
+    checkProxy: 'worker://apac',
   },
       // [OPTIONAL] headers to be
       // [OPTIONAL] body to be sent (require POST/PUT/PATCH method)
