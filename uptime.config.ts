@@ -49,7 +49,7 @@ const workerConfig: WorkerConfig = {
     id: 'random',
     name: '随机图',
     method: 'GET',
-    target: 'https:/random.arcwolf.top/pic',
+    target: 'https://random.arcwolf.top/pic',
     checkProxy: 'worker://apac',
     statusPageLink: 'https:/random.arcwolf.top/pic',
   },
