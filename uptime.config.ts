@@ -68,6 +68,22 @@ const workerConfig: WorkerConfig = {
     target: 'wsl.arcwolf.top:80',
     checkProxy: 'worker://apac',
   },
+  {
+    id: 'convert',
+    name: '转换器',
+    method: 'GET',
+    target: 'https://convert.arcwolf.top',
+    checkProxy: 'worker://apac',
+    statusPageLink: 'https://convert.arcwolf.top',
+  },
+  {
+    id: 'pwd',
+    name: '密码库',
+    method: 'GET',
+    target: 'https://bw.arcwolf.top',
+    checkProxy: 'worker://apac',
+    statusPageLink: 'https://bw.arcwolf.top',
+  },
       // [OPTIONAL] headers to be
       // [OPTIONAL] body to be sent (require POST/PUT/PATCH method)
       // body: 'Hello, world!',
