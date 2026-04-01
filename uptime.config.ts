@@ -86,7 +86,7 @@ const workerConfig: WorkerConfig = {
   },
     {
     id: 'seewopwd',
-    name: "希沃密码',
+    name: '希沃密码',
     method: 'GET',
     target: 'https://pwd.arcwolf.top',
     checkProxy: 'worker://apac',
