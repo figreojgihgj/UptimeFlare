@@ -84,6 +84,14 @@ const workerConfig: WorkerConfig = {
     checkProxy: 'worker://apac',
     statusPageLink: 'https://bw.arcwolf.top',
   },
+    {
+    id: 'seewopwd',
+    name: "希沃密码',
+    method: 'GET',
+    target: 'https://pwd.arcwolf.top',
+    checkProxy: 'worker://apac',
+    statusPageLink: 'https://pwd.arcwolf.top',
+  },
       // [OPTIONAL] headers to be
       // [OPTIONAL] body to be sent (require POST/PUT/PATCH method)
       // body: 'Hello, world!',
