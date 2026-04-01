@@ -84,7 +84,7 @@ const workerConfig: WorkerConfig = {
     checkProxy: 'worker://apac',
     statusPageLink: 'https://bw.arcwolf.top',
   },
-    {
+  {
     id: 'seewopwd',
     name: '希沃密码',
     method: 'GET',
