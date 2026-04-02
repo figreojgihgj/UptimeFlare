@@ -153,7 +153,20 @@ const workerConfig: WorkerConfig = {
 // const maintenances: MaintenanceConfig[] = []
 
 const maintenances: MaintenanceConfig[] = [
-
+ {
+    // [Optional] Monitor IDs to be affected by this maintenance
+    monitors: ['umami', 'wsl', 'convert', 'pwd'],
+    // [Optional] default to "Scheduled Maintenance" if not specified
+    title: '影响列表',
+    // Description of the maintenance, will be shown at status page
+    body: '受Windows Update不定时更新影响，以下服务可能随时出错',
+    // Start time of the maintenance, in UNIX timestamp or ISO 8601 format
+    start: '2026-04-2T17:05:00+08:00',
+    // [Optional] end time of the maintenance, in UNIX timestamp or ISO 8601 format
+    // if not specified, the maintenance will be considered as on-going
+    // [Optional] color of the maintenance alert at status page, default to "yellow"
+    color: 'blue',
+  },
 ]
 
 // Don't edit this line
