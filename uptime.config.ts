@@ -166,7 +166,7 @@ const maintenances: MaintenanceConfig[] = [
     // if not specified, the maintenance will be considered as on-going
     // [Optional] color of the maintenance alert at status page, default to "yellow"
     color: 'blue',
-  }
+  },
 ]
 
 // Don't edit this line
